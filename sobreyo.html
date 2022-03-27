@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>About Me</title>
+<link href="img/favicon.ico" rel="icon">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<meta name="Keywords" content="Portfolio, Portafolio, Trabajos haslin, acerca de mi">
+<meta name="Description" content="acerca de mi, un poco acerde de haslin avila">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    
+	<header class="header-area">
+		<div class="container">
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+				<a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="servicios.html">Servicios</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="sobreyo.html">Acerca de Mi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="projects.html">Projectos realizados</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contactame</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+
+		</div>
+	</header>
+	
+	<section id="aam" class="section">
+		<div class="container">
+			
+			<div class="row">
+				<article class="col-md-2 col-sm-12"></article>
+				
+				<article id="Center" class="col-md-8 col-sm-12">
+					<h2>Un Poco de Mi</h2>
+					<p>Previamente estudie Ingenieria en sistemas, al ver que despues de unos años no pude progresar y haberle perdido el gusto decidi cambiarme de carrera.<br> Al cambiarme a Diseño Digital y Animación Digital, encontre algo que si me interesaba más y que podia disfrutar mas. He aprendido varias tecnicas nuevas y como usar las herramientas. Lo que mas me gusta de todo es modelar en 3D, me parece fascinante y interesante pone mi imaginacion a trabajar</p>
+				</article>
+				
+				<article class="col-md-2 col-sm-12"></article>
+			</div>
+			
+			<div class="row" id="special">
+				<article class="col-md-3 col-sm-12">
+			 		<i class="fas fa-paint-brush"></i><h3>Arte</h3>
+				</article>
+				
+				<article class="col-md-3 col-sm-12">
+					<i class="fas fa-pencil-ruler"></i><h3>Diseño</h3>
+				</article>
+					
+				<article class="col-md-3 col-sm-12">
+					<i class="fas fa-cubes"></i><h3>Modelado 3D</h3>
+				</article>
+					
+				<article class="col-md-3 col-sm-12">
+					<i class="fas fa-gamepad"></i><h3>Diseño Videojuegos</h3>
+				</article>
+			</div>
+			
+		</div>
+	</section>
+    
+	<footer class="section">
+		<p>Copyright Portafolio (Web 1) - Haslin Avila</p>
+	</footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+	</script>
+    <script>
+		$(function() {
+			$(window).on('scroll', function () {
+				if ($(window).scrollTop() > 48) {
+					$('.header-area').addClass('sticky slideInDown');
+				} else {
+					$('.header-area').removeClass('sticky slideInDown');
+				}
+			});
+			
+			$('#navbar').onePageNav({
+				currentClass: 'active',
+				scrollSpeed: 1000,
+				easing: 'easeOutQuad'
+        	});		
+		});
+	</script>
+	
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>

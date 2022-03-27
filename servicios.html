@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Servicios</title>
+	
+<link href="img/favicon.ico" rel="icon">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+	
+<meta name="Keywords" content="Portfolio, Portafolio, Trabajos haslin, servicios">
+<meta name="Description" content="servicios, servicios ofrecidos por haslin avila">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    
+	<header class="header-area">
+		<div class="container">
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+				<a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="servicios.html">Servicios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sobreyo.html">Acerca de Mi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="projects.html">Projectos realizados</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contactame</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+
+		</div>
+	</header>
+    
+	<section id="services" class="section">
+		<div class="container">
+			
+			<h2>Servicios</h2>
+			<h3>Aqui puedo ofrecerte algunos de mis servicios</h3>
+			
+			<ul class="list-inline" id="listing">
+				<li>
+					<i class="fas fa-paint-brush">Arte</i>
+					<p>Ofrezco diseños artisticos de alta calidad que se adaptan al estandar de cada uno de mis clientes</p>
+				</li>
+				<li>
+					<i class="fas fa-pencil-ruler">Diseño</i>
+					<p>Puedo hacer diseños gráficos que se ven nítidos y hermosos</p>
+				</li>
+				<li>
+					<i class="fas fa-cubes">Modelado 3D</i>
+					<p>Tengo el conocimiente y la habilidad de crear modelos 3d que se ven interesantes</p>
+				</li>
+				<li>
+					<i class="fas fa-gamepad">Diseño Videojuegos</i>
+					<p>Tengo experiencia en la creacion de mundos virtuaara videojuegos</p>
+				</li>
+			</ul>
+			
+		</div>
+	</section>
+	
+	<footer class="section">
+		<p>Copyright Portafolio (Web 1) - Haslin Avila</p>
+	</footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+	</script>
+    <script>
+		$(function() {
+			$(window).on('scroll', function () {
+				if ($(window).scrollTop() > 48) {
+					$('.header-area').addClass('sticky slideInDown');
+				} else {
+					$('.header-area').removeClass('sticky slideInDown');
+				}
+			});
+			
+			$('#navbar').onePageNav({
+				currentClass: 'active',
+				scrollSpeed: 1000,
+				easing: 'easeOutQuad'
+        	});		
+		});
+	</script>
+	
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>
